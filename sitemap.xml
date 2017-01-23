@@ -13,49 +13,49 @@
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/de/dev/<loc>
+        <loc>https://docs.blender.org/manual/de/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/en/dev/<loc>
+        <loc>https://docs.blender.org/manual/en/dev/</loc>
         <changefreq>hourly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/es/dev/<loc>
+        <loc>https://docs.blender.org/manual/es/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/fr/dev/<loc>
+        <loc>https://docs.blender.org/manual/fr/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/ko/dev/<loc>
+        <loc>https://docs.blender.org/manual/ko/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/pt/dev/<loc>
+        <loc>https://docs.blender.org/manual/pt/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/ru/dev/<loc>
+        <loc>https://docs.blender.org/manual/ru/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://docs.blender.org/manual/zh.cn/dev/<loc>
+        <loc>https://docs.blender.org/manual/zh.cn/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
