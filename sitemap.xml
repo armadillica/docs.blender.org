@@ -31,6 +31,12 @@
     </url>
 
     <url>
+        <loc>https://docs.blender.org/manual/fi/dev/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://docs.blender.org/manual/fr/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
