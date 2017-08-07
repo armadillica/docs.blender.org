@@ -43,6 +43,12 @@
     </url>
 
     <url>
+        <loc>https://docs.blender.org/manual/it/dev/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://docs.blender.org/manual/ko/dev/</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
