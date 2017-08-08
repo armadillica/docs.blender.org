@@ -1,5 +1,4 @@
 User-agent: *
 Sitemap: https://docs.blender.org/sitemap.xml
-Crawl-delay: 5
 disallow:
 
