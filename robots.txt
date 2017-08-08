@@ -1,4 +1,2 @@
 User-agent: *
 Sitemap: https://docs.blender.org/sitemap.xml
-disallow:
-
