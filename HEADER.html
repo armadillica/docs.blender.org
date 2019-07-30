@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-	<head>
-		<meta charset="utf-8">
-		<title>Blender Python API - blender.org</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Home of the Blender project - Free and Open 3D Creation Software" />
-		<meta name="author" content="Blender Foundation">
-		<meta name="theme-color" content="#ed8f31">
-		<meta property="og:site_name" content="blender.org" />
-		<meta property="og:title" content="Blender Python API - blender.org" />
-		<meta property="og:description" content="Home of the Blender project - Free and Open 3D Creation Software" />
-		<meta property="og:url" content="" />
-		<meta property="og:image" content="https://www.blender.org/wp-content/themes/bthree/assets/images/blender_logo_square.png" />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@blender_org" />
-		<meta name="twitter:title" content="Blender Python API - blender.org" />
-		<meta name="twitter:description" content="Home of the Blender project - Free and Open 3D Creation Software" />
-		<meta name="twitter:image" content="https://www.blender.org/wp-content/themes/bthree/assets/images/blender_logo_square.png" />
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css?4c87a8" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?4c87a8" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" media="all" href="https://www.blender.org/wp-content/themes/bthree/assets/css/main.css" />
-		<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto" rel="stylesheet">
-		<link rel="shortcut icon" href="https://www.blender.org/wp-content/themes/bthree/assets/images/favicon.ico">
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <title>Blender Documentation - blender.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home of the Blender project - Free and Open 3D Creation Software" />
+    <meta name="author" content="Blender Foundation">
+    <meta name="theme-color" content="#ed8f31">
+    <meta property="og:site_name" content="blender.org" />
+    <meta property="og:title" content="Blender Documentation - blender.org" />
+    <meta property="og:description" content="Home of the Blender project - Free and Open 3D Creation Software" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="https://www.blender.org/wp-content/themes/bthree/assets/images/blender_logo_square.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@blender_org" />
+    <meta name="twitter:title" content="Blender Documentation - blender.org" />
+    <meta name="twitter:description" content="Home of the Blender project - Free and Open 3D Creation Software" />
+    <meta name="twitter:image" content="https://www.blender.org/wp-content/themes/bthree/assets/images/blender_logo_square.png" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?4c87a8" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.blender.org/wp-content/themes/bthree/style.css" type="text/css" media="screen" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.blender.org/wp-content/themes/bthree/assets/images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<style type="text/css">
+    <style type="text/css">
+        .entry-content {
+            margin: 48px auto;
+            padding-bottom: 24px
+        }
 
-			.box h2 {
-				margin-top: 20px;
-			}
+        .svg-icon {
+            width: 33%
+        }
 
-			.doc-card {
-				box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-				transition: box-shadow 0.3s ease-in-out;
-			}
-			.doc-card:hover {
-				box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-			}
+        .box h2 {
+            margin-top: 20px;
+            color: #CCC
+        }
 
-			.doc-card p {
-				color: #333;
-			}
+        .box a {
+            text-decoration-line: none;
+        }
 
-			.doc-card .icon-row {
-				background-color: #4d4d4d;
-			}
-		</style>
+        .doc-card {
+            box-shadow: none;
+            transition: box-shadow 0.3s ease-in-out;
+        }
 
-	</head>
-	<body>
-		<div class="container-main">
-			<a name="hop"></a>
-			<header class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
-							<span class="sr-only">Toggle navigation</span>
-							<i class="fa fa-bars"></i>
-						</button>
-						<a class="navbar-logo" href="https://www.blender.org">
-							<img src="https://www.blender.org/wp-content/themes/bthree/assets/images/logo.png?4c87a8" width="128" height="37">
-						</a>
-					</div>
+        .doc-card:hover {
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
 
-					<nav class="collapse navbar-collapse" id="navbar-collapse-menu">
-						<ul class="nav navbar-nav navbar-right">
-							<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="https://www.blender.org/features/">Features</a></li>
-							<li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="https://www.blender.org/download/">Download</a></li>
-							<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://www.blender.org/support/">Support</a></li>
-							<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="https://www.blender.org/get-involved/">Get Involved</a></li>
-							<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="https://www.blender.org/about/">About</a></li>
-							<li id="menu-item-30672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30672"><a href="https://www.blender.org/donate">Donate</a></li>
-							<li id="menu-item-1972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972"><a href="http://store.blender.org">Store</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+        .doc-card p {
+            color: #ccc;
+        }
+    </style>
 
-			<div class="featured featured-sm">
-					<div class="featured-overlay"></div>
-					<div class="container height-full">
-						<div class="bottom">
-							<h1>Blender Python API</h1>
-						</div>
-					</div>
-				</div>
-				<div class="container">
+</head>
+
+<body>
+    <div class="container-main">
+        <a name="hop"></a>
+        <nav class="navbar navbar-expand-md navbar-primary fixed-top navbar-shown" role="navigation">
+            <div class="container">
+                <a class="navbar-brand navbar-logo-blender" href="https://www.blender.org" title="Go to blender.org"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li id="menu-item-58172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58172"><a href="https://www.blender.org/features/" class="nav-link">Features</a></li>
+                        <li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="https://www.blender.org/download/" class="nav-link">Download</a></li>
+                        <li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://www.blender.org/support/" class="nav-link">Support</a></li>
+                        <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="https://www.blender.org/get-involved/" class="nav-link">Get Involved</a></li>
+                        <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="https://www.blender.org/about/" class="nav-link">About</a></li>
+                        <li id="menu-item-1972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972"><a href="http://store.blender.org" class="nav-link">Store</a></li>
+                        <li id="menu-item-30672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30672"><a title="Join the Development Fund" href="https://fund.blender.org/" class="nav-link"><i class="fa fa-heart"></i> Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="featured">
+            <div class="container justify-content-center text-">
+                <div class="featured-content align-self-start">
+                    <h1 class="mx-4 mt-4">Blender Python API</h1>
+                </div>
+            </div>
+            <div style="opacity: 1.0;" class="featured-overlay"></div>
+        </div>
+        <div class="container">
